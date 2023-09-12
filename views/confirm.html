@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .buttonGroup {
+        display: flex;
+        gap: 0.5rem;
+      }
+
+      .yes {
+        border: white;
+        background-color: #6366f1;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .no {
+        border: white;
+        background-color: #f43f5e;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h2>Are you sure you want to visit this site?</h2>
+      <p>{{.URL}}</p>
+
+      <div class="buttonGroup">
+        <a href="{{.URL}}"><button class="yes">Yes</button></a>
+        <a href="https://google.com"><button class="no">No</button></a>
+      </div>
+    </main>
+  </body>
+</html>
