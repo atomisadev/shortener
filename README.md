@@ -19,7 +19,7 @@ go run .
 Make sure you have Go 1.13+ installed in order for it to work properly.
 
 ## Usage
-```
+```bash
 # Actually shorten URLs (method: GET)
 curl "http://localhost:8080/shorten?url=https://www.google.com"
 
